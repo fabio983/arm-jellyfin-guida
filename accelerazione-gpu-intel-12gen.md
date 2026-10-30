@@ -56,6 +56,8 @@ docker run -d \
     -v "/home/arm/music:/home/arm/music" \
     -v "/home/arm/logs:/home/arm/logs" \
     -v "/home/arm/media:/home/arm/media" \
+    -v "/mnt/truenas/media/Film:/home/arm/media/completed/movies" \
+    -v "/mnt/truenas/media/Serie TV:/home/arm/media/completed/tv" \
     -v "/home/arm/config:/etc/arm/config" \
     --privileged \
     --restart "always" \
