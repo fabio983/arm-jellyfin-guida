@@ -52,6 +52,13 @@ Si apre un browser e si va su `http://IP-DEL-PC:8080`. Al primo avvio si clicca 
 
 Si va in Settings, poi nel tab Ripper settings. Le stesse chiavi si possono modificare nel file `/home/arm/config/arm.yaml`.
 
+**N.B.:** se nell'interfaccia web i parametri in Ripper settings non sono scrivibili, dovete sistemare i permessi da terminale con:
+```bash
+sudo chown -R 1001:1001 /home/arm/config
+```
+
+### Parametri da modificare
+
 **OMDB_API_KEY**: la chiave API di OMDb. Serve ad ARM per recuperare in automatico titolo e anno di film e serie TV. La chiave è gratuita e si ottiene dal sito che compare lasciando per qualche istante il mouse sulla "i" blu a destra nella riga.
 
 **MINLENGTH**: 3600. ARM prende in considerazione solo i titoli di almeno un'ora, evitando che scambi degli extra per il film vero e proprio. Per i dischi delle serie, o se volete copiare anche i contenuti speciali, si può abbassare a mano dal singolo job (vedi sezione 5).
